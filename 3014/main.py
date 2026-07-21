@@ -3,7 +3,6 @@ a = int(input())
 b = int(input())
 c = int(input())
 d = int(input())
-
 milk = d // a
 
 if not b:
