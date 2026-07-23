@@ -15,25 +15,25 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-
+3031/Ink
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-
+559044
 ```
 
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+0-15 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -73,7 +73,7 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
-
+สร้างตัวแปรรับค่าพื้นที่ที่น้ำหมึกแผ่ขยายไปต่อหนึ่งวินาทีและจำนวนคำร้องของผู้คน และสร้างตัวแปรรับค่าพิกัดบ้าน และคำนวณว่าจากระยะทางของบ้านคนที่มาร้องจะถูกท่วมในวินาทีที่เท่าไหร่ จากนั้นให้printออกมา
 ```
 
 ---
@@ -93,9 +93,9 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:สร้างตัวแปรรับค่าพื้นที่ที่น้ำหมึกแผ่ขยายไปต่อหนึ่งวินาทีและจำนวนคำร้องของผู้คน และกำหนดค่าพาย
+Step 2:ขณะที่คำร้องยังไม่หมดสร้างตัวแปรรับค่าพิกัดบ้านคนที่มาร้อง หาพื้นที่วงกลมของน้ำหมึกที่กระจายเป็นวงกลม จากพายrยกกำลัง2 โดยหาrยกกำลัง2จากระยะทางจากจุดศูนย์กลางมายังบ้านโดยหาจากสูตร r**2 = x * x + y * y โดยrคือรัศมีที่มีค่าเท่ากับระยะห่างจาก(0,0)ถึงบ้าน 
+Step 3:หาเวลาจากการเอาพื้นที่ของหมึกที่จะขยายไปแต่ละบ้านหารด้วยระยะที่น้ำหมึกแผ่ขยายและปัดค่าขึ้นด้วยmath.ceilและprintออกมา
 ```
 
 ---
@@ -115,7 +115,7 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+เหมือนกับที่คิดไว้ และปัดเศษขึ้นเปนวินาทีใหม่ถูกต้องและคำนวณเวลาถูก
 ```
 
 ---
@@ -135,31 +135,32 @@ Step 3:
 ทำไมเลือก case นี้:
 
 ```text
-
+ทดสอบ1คำร้อง และระยะใกล้
 ```
 
 Input:
 
 ```text
-
+10 1
+1 1
 ```
 
 Expected output:
 
 ```text
-
+1
 ```
 
 Actual output:
 
 ```text
-
+1
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +168,32 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+ทดลองว่าถ้าบ้านอยู่จุดกำเนิด
 ```
 
 Input:
 
 ```text
-
+20 1
+0 0
 ```
 
 Expected output:
 
 ```text
-
+0
 ```
 
 Actual output:
 
 ```text
-
+0
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +201,32 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+ทดลองถ้าห่างแค่ระยะแกนเดียว
 ```
 
 Input:
 
 ```text
-
+20 1
+0 10
 ```
 
 Expected output:
 
 ```text
-
+16
 ```
 
 Actual output:
 
 ```text
-
+16
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +236,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -251,7 +254,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -305,10 +308,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. |Yes |
+| I understand my final code. |Yes |
+| I recorded the real OJ status. |Yes |
+| I did not copy AI-generated text directly into this file. |Yes |
+| I did not copy code from another person. |Yes |
+| If I received human help, I disclosed it in this file. |Yes |
+| I submitted the final code to the OJ by myself. |Yes |
