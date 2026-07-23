@@ -15,25 +15,25 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-3011
+3011/Colors
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-
+545273
 ```
 
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+0-15 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -73,7 +73,7 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
-
+ให้รับinputมา2ค่าจากแม่สี3สี แล้วผสมสีโดยที่ ถ้าinputเป็นแดงและเหลืองให้printส้ม ถ้าinputเป็นแดงและน้ำเงินให้printม่วง ถ้าinputเป็นน้ำเงินและเหลืองให้printเขียว ถ้ามีสีที่ไม่อยู่ในแม่สีให้print Error
 ```
 
 ---
@@ -93,9 +93,9 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:กำหนดตัวแปรที่จะรับสีทั้ง2ค่าและทำให้เป็นตัวพิมพ์เล็กจะได้คำนวนได้เผื่อต่างกันแค่ตัวใหญ่ตัวแรก
+Step 2:เขียนโค้ดที่ถ้าเกิดสีที่1และสีที่2มีในแม่สีและผสมสี
+Step 3:printสีที่ผสมออกมา และถ้าไม่ใช่ให้print Error
 ```
 
 ---
@@ -115,7 +115,7 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+ติดtestcase3testcase เลยคิดว่ามีกรณีที่ถ้ารับสีเหมือนกันคงผสมได้สีเดิมเลยใส่เพิ่มเข้าไปในโค้ดและได้ผล ผ่านทุกtestcase
 ```
 
 ---
@@ -135,31 +135,32 @@ Step 3:
 ทำไมเลือก case นี้:
 
 ```text
-
+เช็คว่าถ้ามีสีอื่นนอกจากในแม่สีทั้ง2input จะขึ้นว่าอะไร
 ```
 
 Input:
 
 ```text
-
+Black
+White
 ```
 
 Expected output:
 
 ```text
-
+Error
 ```
 
 Actual output:
 
 ```text
-
+Error
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +168,32 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+เพราะอยากลองว่าถ้ามีสีใดสีหนึ่งอยู่ในแม่สีแต่อีกสีไม่อยู่ในแม่สีจะขึ้นว่าอะไร
 ```
 
 Input:
 
 ```text
-
+Red
+Green
 ```
 
 Expected output:
 
 ```text
-
+Error
 ```
 
 Actual output:
 
 ```text
-
+Error
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +201,32 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+ถ้าเป็นสีในแม่สีทั้งคู่และเป็นสีเดียวกันต่างแค่ตัวหนังสือตัวแรกจะขึ้นสีเดิมไหม
 ```
 
 Input:
 
 ```text
-
+Red
+red
 ```
 
 Expected output:
 
 ```text
-
+Red
 ```
 
 Actual output:
 
 ```text
-
+Red
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +236,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -251,7 +254,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -305,10 +308,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. |Yes |
+| I understand my final code. |Yes |
+| I recorded the real OJ status. |Yes |
+| I did not copy AI-generated text directly into this file. |Yes |
+| I did not copy code from another person. |Yes |
+| If I received human help, I disclosed it in this file. |Yes |
+| I submitted the final code to the OJ by myself. |Yes |

@@ -15,25 +15,25 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-
+3022/Temperature
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-
+547436
 ```
 
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+0-15 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -73,7 +73,8 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
-
+สร้างตัวแปร รับค่า3ค่า คืออุณหภูมิและตัวอักษรแทนค่าหน่วยอุณหภูมิและหน่วยอุณหภูมิที่ต้องการแล้วนำไปคำนวณจากสูตรการเปลี่ยนอุณหภูมิและprint
+ค่าอุณหภูมิที่ต้องการทศนิยม2ตำแหน่ง
 ```
 
 ---
@@ -93,9 +94,9 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:สร้างตัวแปรรับค่าอุณหภูมิและอุณหภูมิที่รับมาและอุณหภูมิที่ต้องการ
+Step 2:คำนวณการเปลี่ยนแปลงอุณหภูมิ
+Step 3:printค่าอุณหภูมิที่ต้องการเป็นทศนิยม2ตำแหน่ง
 ```
 
 ---
@@ -115,7 +116,7 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+เหมือนกับที่คิดไว้ คำนวณสมการถูกต้อง แปลงหน่วยถูกหน่วยและทศนิยม2ตำแหน่ง
 ```
 
 ---
@@ -132,34 +133,36 @@ Step 3:
 
 ### Test Case 1
 
-ทำไมเลือก case นี้:
+ทำไมเลือก case นี้:อยากลองทดสอบเปลี่ยนเป็นอุณหภูมิเดิม
 
 ```text
-
+อยากลองทดสอบเปลี่ยนเป็นอุณหภูมิเดิม
 ```
 
 Input:
 
 ```text
-
+37.5
+C
+C
 ```
 
 Expected output:
 
 ```text
-
+37.50
 ```
 
 Actual output:
 
 ```text
-
+37.50
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +170,33 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+อยากลองเปลี่ยนRankineเป็นCelsiusและทดสอบว่าเป็นทศนิยม2ตำแหน่งหรือไม่
 ```
 
 Input:
 
 ```text
-
+67
+R
+C
 ```
 
 Expected output:
 
 ```text
-
+-235.93
 ```
 
 Actual output:
 
 ```text
-
+-235.93
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +204,33 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+อยากลองเปลี่ยนKelvinเป็นCelsiusและทดสอบว่าเป็นทศนิยม2ตำแหน่งหรือไม่
 ```
 
 Input:
 
 ```text
-
+273.15
+K
+C
 ```
 
 Expected output:
 
 ```text
-
+0.00
 ```
 
 Actual output:
 
 ```text
-
+0.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +240,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -251,7 +258,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -305,10 +312,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. |Yes |
+| I understand my final code. |Yes |
+| I recorded the real OJ status. |Yes |
+| I did not copy AI-generated text directly into this file. |Yes |
+| I did not copy code from another person. |Yes |
+| If I received human help, I disclosed it in this file. |Yes |
+| I submitted the final code to the OJ by myself. |Yes |
