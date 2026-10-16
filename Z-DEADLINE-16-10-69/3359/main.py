@@ -1,14 +1,13 @@
 """CUPS"""
-from bisect import bisect_left
-import sys
-data = list(map(int, sys.stdin.read().split()))
-n = data[0]
-cups = data[1:n + 1]
-stacks = []
-for cup in cups:
-    i = bisect_left(stacks, cup)
-    if i == len(stacks):
-        stacks.append(cup)
-    else:
-        stacks[i] = cup
-print(len(stacks))
+def main():
+    """CUPS"""
+    n = int(input())
+    count = {}
+    for _ in range(n):
+        size = int(input())
+        if size in count:
+            count[size] += 1
+        else:
+            count[size] = 1
+    print(max(count.values()))
+main()
