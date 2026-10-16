@@ -15,13 +15,13 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-3293/BigFrame
+3477/Pad Thai
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-666278
+690012
 ```
 
 สถานะ OJ:
@@ -73,7 +73,7 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
-ให้รับข้อความมา5บรรทัดแล้วทำให้อยู่ในกรอบ*
+รับวัตถุดิบและรสชาติ ตรวจสอบความถูกต้อง แสดงผลตามโจทย์
 ```
 
 ---
@@ -93,9 +93,9 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:รับข้อความ5บรรทัด
-Step 2:หาความกว้างกรอบ
-Step 3:พิมพ์ข้อความแล้วปิดกรอบสี่เหลี่ยมใต้บรรทัดสุดท้าย
+Step 1:รับข้อมูล
+Step 2:ตรวจสอบวัตถุดิบ
+Step 3:แสดงผล
 ```
 
 ---
@@ -115,7 +115,7 @@ Step 3:พิมพ์ข้อความแล้วปิดกรอบส�
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-เหมือนกับที่คิดไว้ ข้อความข้างในมี5บรรทัด และรอบด้วยกรอบ*
+เหมือนกับที่คิดไว้ แสดงผลถูกต้องตามเงื่อไขวัตถุดิบ
 ```
 
 ---
@@ -135,41 +135,40 @@ Step 3:พิมพ์ข้อความแล้วปิดกรอบส�
 ทำไมเลือก case นี้:
 
 ```text
-ทดสอบถ้ามีแค่1ตัวต่อ1บรรทัด
+วัตถุดิบครบและรสชาติครบ
 ```
 
 Input:
 
 ```text
-H
-E
-L
-L
-O
+Pad Thai Sauce
+Tofu
+Pickle Turnip
+Shrimp
+Bean Sprouts
+Noodle
+Chives
+Lime
+Egg
+Oil
+Peanuts
+Cook
+Sweet
+Sour
+Salty
+End
 ```
 
 Expected output:
 
 ```text
-*****
-* H *
-* E *
-* L *
-* L *
-* O *
-*****
+Delicious!
 ```
 
 Actual output:
 
 ```text
-*****
-* H *
-* E *
-* L *
-* L *
-* O *
-*****
+Delicious!
 ```
 
 Result:
@@ -183,41 +182,30 @@ Pass
 ทำไมเลือก case นี้:
 
 ```text
-ทดลองถ้าใส่ช่องว่างจะเป็นยังไง
+มีวัตถุดิบผิด
 ```
 
 Input:
 
 ```text
- 
- 
-
-
-
+Tofu
+Egg
+Chicken
+Cook
+Sweet
+End
 ```
 
 Expected output:
 
 ```text
-*****
-*   *
-*   *
-*   *
-*   *
-*   *
-*****
+This is not Pad Thai!!!
 ```
 
 Actual output:
 
 ```text
-*****
-*   *
-*   *
-*   *
-*   *
-*   *
-*****
+This is not Pad Thai!!!
 ```
 
 Result:
@@ -231,41 +219,39 @@ Pass
 ทำไมเลือก case นี้:
 
 ```text
-ทดลองถ้าenterไปเลย
+วัตถุดิบครบแต่รสชาติไม่ครบ
 ```
 
 Input:
 
 ```text
-
-
-
-
-
+Pad Thai Sauce
+Tofu
+Pickle Turnip
+Shrimp
+Bean Sprouts
+Noodle
+Chives
+Lime
+Egg
+Oil
+Peanuts
+Cook
+Sweet
+Sour
+End
 ```
 
 Expected output:
 
 ```text
-****
-*  *
-*  *
-*  *
-*  *
-*  *
-****
+Not Bad...
 ```
 
 Actual output:
 
 ```text
-****
-*  *
-*  *
-*  *
-*  *
-*  *
-****
+Not Bad...
 ```
 
 Result:
